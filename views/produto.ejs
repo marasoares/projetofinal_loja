@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Good Sales</title>
+</head>
+<body>
+    <nav>
+        <article>
+            <img src="sacola-de-compras.jpg" alt= "">
+            <h1>Good Sales</h1>
+            <h3>O Seu Catálogo Vitual</h3>
+        </article>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
+            <li><a href="/quemsomos">Quem Somos</a></li>
+        </ul>
+    </nav>
+
+    <!-- <% if(message != "") { %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% } %> -->
+
+
+    <header>
+        <section id=produto>
+            <form action="/new" method="POST">
+                <div>
+                    <label for="produto">Produto: </label>
+                    <input type="text" name="produto" id="produto" placeholder="Qual o produto que você quer divulgar? (Ex: vestido, caixa de bombom, cabeleireiro(a)" required>
+                </div>
+
+                <div>
+                    <label for="descricao">Descriçao: </label>
+                    <input type="text" name="descricao" id="descricao" placeholder="Descreva seu produto/serviço" required>
+                </div>
+
+                <div>
+                    <label for="tamanho">Tamanho: </label>
+                    <input type="text" name="tamanho" id="tamanho" placeholder="Digite o tamanho" required>
+                </div>
+
+                <div>
+                    <label for="imagem">Endereço: </label>
+                    <input type="text" name="imagem" id="imagem" placeholder="Insira o link com a foto do seu produto/serviço" required>
+                </div>
+
+                <div>
+                    <label for="valor">Valor: </label>
+                    <input type="text" name="valor" id="valor" placeholder="Digite o valor" required>
+                </div>
+
+            
+                <button type="submit">Finalizar Cadastro</button>
+           
+            </form>
+        </section>
+    </header>
+
+    <script src="/public/js/script.js"></script>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados. < Good Sales /></p>
+    </footer>
+</body>
+</html>

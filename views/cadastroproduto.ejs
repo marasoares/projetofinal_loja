@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Good Sales</title>
+</head>
+<body>
+    <nav>
+        <article>
+            <img src="sacola-de-compras.jpg" alt= "">
+            <h1>Good Sales</h1>
+            <h3>O Seu Catálogo Vitual</h3>
+        </article>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
+            <li><a href="/quemsomos">Quem Somos</a></li>
+        </ul>
+    </nav>
+    <section id=cadastroproduto>
+        <form action="/newproduto" method="POST">
+            <div>
+                <label for="item">Tipo de produto: </label>
+                <input type="text" name="item" id="item" placeholder="Digite o tipo de produto" required>
+            </div>
+
+            <div>
+                <label for="descricao">Categoria do produto: </label>
+                <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição do produto" required>
+            </div>
+
+            <div>
+                <label for="tamanho">Logo da loja</label>
+                <input type="text" name="tamanho" id="tamanho" placeholder="Informe os tamanhos disponíveis" required>
+            </div>
+
+            <div>
+                <label for="imagem">Nome o CNPJ/CPF da Loja: </label>
+                <input type="text" name="imagem" id="imagem" placeholder="Insira o link do logo da sua loja" required>
+            </div>
+
+            <div>
+                <label for="valor">Telefone de contato: </label>
+                <input type="text" name="valor" id="valor" placeholder="Digite o valor do produto" required>
+            </div>
+
+            
+            <button type="submit">Finalizar Cadastro</button>
+           
+        </form>
+    </section>
+
+    <script src="/public/js/script.js"></script>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados. < Good Sales /></p>
+    </footer>
+</body>
+</html>

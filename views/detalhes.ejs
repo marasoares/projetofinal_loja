@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Good Sales</title>
+</head>
+<body>
+    <nav>
+        <article>
+            <a href="/">
+            <img src="/img/sacola-de-compras.jpg" alt= "Sacola de Compras" widht=200>
+            </br>
+            </a>
+            <h1>Good Sales</h1>
+            <h4>O Seu Catálogo Vitual</h4>
+        </article>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/criar">Cadastro</a></li>
+            <li><a href="/quemsomos">Quem Somos</a></li>
+        </ul>
+    </nav>
+    
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <header>
+        <section class="container">        
+            <img src="/img/pessoas-fazendo-compras.jpg" alt="" width=500>
+            <ul>Good Sales é o seu Catálogo Virtual. 
+            Aqui você não perde mais vendas por falta de divulgação do seu produto.
+            É simples, fácil e prático!
+            Basta enviar seu link para os clientes ou ainda divulgá-lo nas suas redes sociais e pronto!</li>
+            Seus clientes terão acesso a todos os seus produtos!</ul>
+            </br>
+            </br>
+            <h2>Good Sales!</h2><br><br>
+
+        </section>
+
+        <section id="cursos">
+            <h3>Detalhes da Loja:</h3>
+                <section class="card">
+                    <article id="content">
+                            <ul>
+                                <li>Nome: <%= loja.nome %></li>
+                                <li>Descrição: <%= loja.categoria %></li>
+                                <li>Descrição: <%= loja.cnpj %></li>
+                                <li>Descrição: <%= loja.contato %></li>
+                                <li>Descrição: <%= loja.email %></li>
+                                <a href="/">
+                                    <img src="<%= loja.imagem %>" width=200>
+                                </a><br><br>
+                                <a href="/deletar/<%= loja.id %>">DELETAR!</a>
+                            </ul>
+                    </article>
+                </section>
+        </section>
+    </header>
+
+      
+    <script src="/public/js/script.js"></script>
+    </br>
+    </br>
+    <footer>
+        <p>&copy; Todos os direitos reservados. < Good Sales /></p>
+    </footer>
+</body>
+</html>

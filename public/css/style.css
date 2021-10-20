@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/photos/empty-orange-color-shopping-bag-on-the-yellow-background-copy-space-picture-id1178685067?k=20&m=1178685067&s=612x612&w=0&h=Vzg85rLPoUG2bGorUmCSChFjLS_t6xvpXvPzxFxcE-o="), url("https://img.freepik.com/vetores-gratis/pessoas-fazendo-compras-de-desenhos-animados_18591-38433.jpg?size=626&ext=jpg");
+    background-color: rgb(247, 176, 45);
+    background-repeat: repeat, no-repeat;
+    background-position: center top, center;
+    background-attachment: fixed, fixed;
+    background-size: cover, 50px;
+    overflow: auto;
+    position: absolute;
+    text-align: center;
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav img {
+    width: 3rem;
+    padding-left: 0.5rem;
+}
+
+nav article h1 h4 {
+    color: violet;
+    letter-spacing: 100%;
+    padding-right: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: violet;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color:orange;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6rem 3rem 3rem 3rem;
+}
+header section #container {
+    margin: 1rem auto;
+    width: 650px;
+    display: flexbox;
+}
+
+header p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color:black;
+    content: attr();
+    padding: 1.2rem;
+}
+
+header h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+header h2:hover {
+    color: violet;
+}
+
+header h1 #cdaloja {
+    color: violet;
+    padding: 30rem;
+    width: 650px;
+    justify-content: center;
+}
+
+section #cadastro {
+    padding: 3rem;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+section #cadastro form {
+    width: 50%;
+}
+
+section #cadastro form div input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+}
+
+section #cadastro form button {
+    border: 1px solid rgb(243, 117, 243);
+    background-color: violet;
+    color: rgb(243, 117, 243);
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 40%;
+}
+
+section #cadastro form button:hover {
+    background-color: rgb(243, 117, 243);
+    color: violet;
+    transform: scale(1.1);
+}
+
+section #message {
+    padding: 1.5rem;
+    background-color: red;
+    color: black;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span #close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+span #close:hover {
+    color:cadetblue;
+    transform: scale(1.5);
+}
+
+header section #quemsomos ul {
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+header section #mara ul h5 h6 {
+    display: flex;
+    border-radius: 1rem;
+}
+
+header section #valdenir ul h5 h6 {
+    display: flex;
+    border-radius: 1rem;
+}
+

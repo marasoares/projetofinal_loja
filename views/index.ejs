@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Good Sales</title>
+</head>
+<body>
+    <nav>
+        <article>
+            <img src="/img/sacola-de-compras.jpg" alt= "Sacola de Compras" widht=200>
+            </br>
+            <h1>Good Sales</h1>
+            <h4>O Seu Catálogo Vitual</h4>
+        </article>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/criar">Cadastro</a></li>
+            <li><a href="/quemsomos">Quem Somos</a></li>
+        </ul>
+    </nav>
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <header>
+        <section class="container">        
+            <img src="/img/pessoas-fazendo-compras.jpg" alt="" width=500>
+            <ul>Good Sales é o seu Catálogo Virtual. 
+            Aqui você não perde mais vendas por falta de divulgação do seu produto.
+            É simples, fácil e prático!
+            Basta enviar seu link para os clientes ou ainda divulgá-lo nas suas redes sociais e pronto!</li>
+            Seus clientes terão acesso a todos os seus produtos!</ul>
+            </br>
+            </br>
+            <h2>Good Sales!</h2>
+
+        </section>
+
+        <section id="cursos">
+            <h3>Lista de Lojas:</h3>
+            <% loja.forEach(item => { %>
+                <section class="card">
+                    <article id="content">
+                        <ul>
+                            <li>Nome: <%= item.nome %></li>
+                            <li>Categoria: <%= item.categoria %></li>
+                            <a href="/detalhes/<%= item.id %>">
+                                <img src="<%= item.imagem %>" width=200>
+                            </a>
+                        </ul>
+                            <a href = "/editar/<%= item.id %>">Editar</a><br>
+                    </article>
+                </section>
+            <% }) %> 
+        </section>
+    
+        <section>
+            <form action="/criar" method="GET">
+                <button type="submit" id="cloja">Cadastrar Loja</button>
+            
+            </form>
+            <form action="/cadastrocliente" method="Post">
+                
+                <button type="submit" id="ccliente">Cadastrar Cliente</button>
+            </form>
+        </section>
+    </header>
+
+      
+    <script src="/public/js/script.js"></script>
+    </br>
+    </br>
+    <footer>
+        <p>&copy; Todos os direitos reservados. < Good Sales /></p>
+    </footer>
+</body>
+</html>
